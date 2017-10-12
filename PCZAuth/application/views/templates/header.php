@@ -107,7 +107,7 @@ if(empty($donotloadthemes) || !(!empty($donotloadthemes) && $donotloadthemes===t
 						if($isLogin)
 						{
 						?> 
-						itemHtml += '<li class=""><a href="#" id="addWidget" >LoggedIn Menu</></li>';	
+						itemHtml += '<li class=""><a href="'+SiteCommon.base_url+'index.php/auth" id="addAdmin" >Admin Panel</></li>';	
 						<?php
 						}
 						?>		 

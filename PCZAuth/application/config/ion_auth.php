@@ -90,14 +90,14 @@ $config['identity']                   = 'email';             // You can use any 
 
 $config['show_username']               = TRUE;             // 
 
-$config['show_first_name']               = FALSE;             //
-$config['show_last_name']               = FALSE;             //
-$config['show_company']               = FALSE;             //
-$config['show_phone']               = FALSE;             //
-$config['require_first_name']               = FALSE;             //
-$config['require_last_name']               = FALSE;             //
+$config['show_first_name']               = TRUE;             //
+$config['show_last_name']               = TRUE;             //
+$config['show_company']               = TRUE;             //
+$config['show_phone']               = TRUE;             //
+$config['require_first_name']               = TRUE;             //
+$config['require_last_name']               = TRUE;             //
 $config['require_company']               = FALSE;             //
-$config['require_phone']               = FALSE;             //
+$config['require_phone']               = TRUE;             //
 
 $config['min_password_length']        = 8;                   // Minimum Required Length of Password
 $config['max_password_length']        = 20;                  // Maximum Allowed Length of Password
