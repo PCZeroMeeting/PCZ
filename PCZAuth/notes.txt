@@ -1,0 +1,2 @@
+change database here:
+D:\Project\Project\projectsmall\samples\codeigniter\FloxbLinks\application\config\database.php

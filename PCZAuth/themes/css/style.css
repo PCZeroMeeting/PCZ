@@ -1,0 +1,355 @@
+body{
+    padding:0px;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+   background-color:rgba(255,255,255,.8); 
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+   background-color:rgba(255,255,255,.8); 
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+#logout-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+   background-color:rgba(255,255,255,.8); 
+}
+#logout-dp .help-block{
+    font-size:12px    
+}
+#logout-dp .bottom{
+   background-color:rgba(255,255,255,.8); 
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+} 
+
+#logout-dp .form-group {
+    margin-bottom: 10px;
+}
+
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+ 
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+h1 {
+	font-family: cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px; 
+}
+
+.loading
+{
+    opacity:0.7;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-9 */
+    zoom: 1;
+    position:absolute;
+    background:url(../images/ajax-loader.gif) center center no-repeat;
+    background:rgba(255,255,255,.9) url(../images/ajax-loader.gif) center center no-repeat;
+    top:0; right:0; bottom:0; left:0;
+    z-index:1000;
+}
+
+.loading-box 
+{
+	position:absolute;
+	width:20px;
+	height:20px;
+}
+ /*
+ h1{
+    background-image: url(../images/awsome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 11%; 
+    max-width: 800px;
+    margin: 0px 10px 0px 10px;
+	padding: 0px 10px 0px 10px;
+}
+*/
+
+h1 img.logo-before 
+{
+	float:left;
+	width:50px;height:30px;
+}
+h1 img.logo-after
+{
+	float:right;
+	width:50px;height:30px;
+}
+h1 span.logo-mid
+{
+	margin: 0px 10px;
+}
+
+.pagination 
+{ 
+    margin: 5px 0; 
+ 
+}
+
+.badge {
+  padding: 1px 9px 2px;
+  font-size: 12.025px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #999999;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.badge:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.badge-error {
+  background-color: #b94a48;
+}
+.badge-error:hover {
+  background-color: #953b39;
+}
+.badge-warning {
+  background-color: #f89406;
+}
+.badge-warning:hover {
+  background-color: #c67605;
+}
+.badge-success {
+  background-color: #468847;
+}
+.badge-success:hover {
+  background-color: #356635;
+}
+.badge-info {
+  background-color: #3a87ad;
+}
+.badge-info:hover {
+  background-color: #2d6987;
+}
+.badge-inverse {
+  background-color: #333333;
+}
+.badge-inverse:hover {
+  background-color: #1a1a1a;
+}
+
+.checkbox {
+	margin: 0px 5px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	position:relative;
+	font-size:small;
+} 
+.input-checkbox{
+	position:relative;
+	
+	margin-left : -13px;
+} 
+input[type=checkbox].input-checkbox, input[type=radio].input-checkbox{
+	margin: 2px 0px 0px;
+		margin-left : -13px !important;
+}
+
+.badge-new-item {
+	position: absolute;
+    left: 80%;
+    top: 1%;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */	
+}
+
+.badge-edit-item {
+	position: absolute;
+    left: 88%;
+    top: 1%;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */	
+}
+
+.badge-delete-item {
+	position: absolute;
+    left: 86%;
+    top: 1%;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */	
+}
+/*
+.widget-badge-add-item {
+	position: absolute;
+    left: 60%;
+    top: 25%;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /-* For IE8 and earlier *-/	
+}
+
+.widget-badge-edit-item {
+	position: absolute;
+    left: 70%;
+    top: 25%;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /-* For IE8 and earlier *-/	
+}
+
+.widget-badge-delete-item {
+	position: absolute;
+    left: 80%;
+    top: 25%;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /-* For IE8 and earlier *-/	
+}
+*/
+
+/* USER PROFILE PAGE */
+ .card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+[data-notify="progressbar"] {
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 5px;
+}
+.item-default-color
+{
+	color:rgba(0,0,0,.65)
+}
+.item-selected-color
+{
+	color:rgba(0,0,0,.90)
+}
+.modal 
+{
+	z-index:10000;
+}
+/*ENDOF USER PROFILE PAGE */
