@@ -1,2 +1,5 @@
-PCZAuth
+pczAuth
 	-To run see PCZAuth\PCZAuthInstruction.xlsx
+
+pczCrm
+	-requires php 7.0
