@@ -92,6 +92,7 @@ class SugarCleaner
     function __construct()
     {
         global $sugar_config;
+		global $setup_site_url;
         $config = HTMLPurifier_Config::createDefault();
 
         if(!is_dir(sugar_cached("htmlclean"))) {
@@ -102,7 +103,7 @@ class SugarCleaner
         $hidden_tags = array('script' => true, 'style' => true, 'title' => true, 'head' => true);
         $config->set('Core.HiddenElements', $hidden_tags);
         $config->set('Cache.SerializerPath', sugar_cached("htmlclean"));
-        $config->set('URI.Base', $sugar_config['site_url']);
+        $config->set('URI.Base', array_key_exists('site_url',$sugar_config) ? $sugar_config['site_url'] : (array_key_exists('setup_site_url',$_SESSION) ? $_SESSION['setup_site_url'] : $setup_site_url));
         $config->set('CSS.Proprietary', true);
         $config->set('HTML.TidyLevel', 'light');
         $config->set('HTML.ForbiddenElements', array('body' => true, 'html' => true));
