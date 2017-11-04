@@ -3,7 +3,9 @@ pczAuth
 
 pczCrm
 	-requires php 7.0
-
+	-user:admin pass:password
+	-host: suitecrm.local:83
+	-Warning: Upload File SizeWarning: Your PHP configuration should be changed to allow files of at least 6MB to be uploaded
 PCZCrmOrig
 	-are pczCrm fresh from SuitCRM
 	-these are not installed and is still not created
