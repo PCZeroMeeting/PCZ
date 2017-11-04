@@ -3,3 +3,7 @@ pczAuth
 
 pczCrm
 	-requires php 7.0
+
+PCZCrmOrig
+	-are pczCrm fresh from SuitCRM
+	-these are not installed and is still not created
